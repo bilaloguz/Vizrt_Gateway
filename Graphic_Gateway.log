@@ -115,3 +115,119 @@ AttributeError: 'TCPServer' object has no attribute 'tcpServer'
 2021-08-06 16:36:37,157::192.168.147.183 - - [06/Aug/2021 16:36:37] "[32mPOST /save HTTP/1.1[0m" 302 -
 2021-08-06 16:37:55,224::192.168.147.183 - - [06/Aug/2021 16:37:55] "[32mPOST /save HTTP/1.1[0m" 302 -
 2021-08-06 16:37:55,232::192.168.147.183 - - [06/Aug/2021 16:37:55] "GET / HTTP/1.1" 200 -
+2021-08-06 16:54:17,115::192.168.147.183 - - [06/Aug/2021 16:54:17] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:54:17,135::192.168.147.183 - - [06/Aug/2021 16:54:17] "GET / HTTP/1.1" 200 -
+2021-08-06 16:55:03,835::192.168.147.183 - - [06/Aug/2021 16:55:03] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:55:03,848::192.168.147.183 - - [06/Aug/2021 16:55:03] "GET / HTTP/1.1" 200 -
+2021-08-06 17:00:10,630::192.168.147.183 - - [06/Aug/2021 17:00:10] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 17:00:10,642::192.168.147.183 - - [06/Aug/2021 17:00:10] "GET / HTTP/1.1" 200 -
+2021-08-06 17:01:13,574::192.168.147.183 - - [06/Aug/2021 17:01:13] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 17:01:13,587::192.168.147.183 - - [06/Aug/2021 17:01:13] "GET / HTTP/1.1" 200 -
+2021-08-06 17:02:54,587::192.168.147.183 - - [06/Aug/2021 17:02:54] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 17:02:54,600::192.168.147.183 - - [06/Aug/2021 17:02:54] "GET / HTTP/1.1" 200 -
+2021-08-06 17:04:01,736::192.168.147.183 - - [06/Aug/2021 17:04:01] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 17:04:01,755::192.168.147.183 - - [06/Aug/2021 17:04:01] "GET / HTTP/1.1" 200 -
+2021-08-06 17:05:38,257::192.168.147.183 - - [06/Aug/2021 17:05:38] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 17:05:38,331::192.168.147.183 - - [06/Aug/2021 17:05:38] "GET / HTTP/1.1" 200 -
+2021-08-06 17:06:16,641::192.168.147.183 - - [06/Aug/2021 17:06:16] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 17:06:16,657::192.168.147.183 - - [06/Aug/2021 17:06:16] "GET / HTTP/1.1" 200 -
+2021-08-06 17:10:38,804::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 41, in setConfig
+    self.TCPServer.run()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 24, in run
+    (conn, (TCP_IP, TCP_PORT)) = self.tcpServer.accept()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2021-08-06 17:10:38,818::192.168.147.183 - - [06/Aug/2021 17:10:38] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 17:11:32,863::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 41, in setConfig
+    self.TCPServer.run()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 24, in run
+    (conn, (TCP_IP, TCP_PORT)) = self.tcpServer.accept()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2021-08-06 17:11:32,867::192.168.147.183 - - [06/Aug/2021 17:11:32] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 17:12:41,236::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 41, in setConfig
+    self.TCPServer.run()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 24, in run
+    (conn, (TCP_IP, TCP_PORT)) = self.tcpServer.accept()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2021-08-06 17:12:41,239::192.168.147.183 - - [06/Aug/2021 17:12:41] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 17:16:00,939::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 41, in setConfig
+    self.TCPServer.run()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 24, in run
+    (conn, (TCP_IP, TCP_PORT)) = self.tcpServer.accept()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2021-08-06 17:16:00,947::192.168.147.183 - - [06/Aug/2021 17:16:00] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 17:16:29,542::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 41, in setConfig
+    self.TCPServer.run()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 24, in run
+    (conn, (TCP_IP, TCP_PORT)) = self.tcpServer.accept()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2021-08-06 17:16:29,545::192.168.147.183 - - [06/Aug/2021 17:16:29] "[35m[1mPOST /save HTTP/1.1[0m" 500 -

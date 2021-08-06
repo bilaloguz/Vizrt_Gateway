@@ -115,5 +115,7 @@ if __name__ == '__main__':
     webProcess = multiprocessing.Process(target=runWeb)
     webProcess.start()
     print("Started")
-    run_process("path", runGateway)
+    runGateway()
+    while True:
+        time.sleep(10)
     

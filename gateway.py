@@ -38,6 +38,7 @@ class Gateway:
         logging.basicConfig(level=logging.INFO, filename="Graphic_Gateway.log", format="%(asctime)s::%(message)s")
         self.TCPServer = TCPServer(self.listenPort, self.dataReceived)
         self.tcpServerCreated = True
+        self.TCPServer.run()
 
     def dataReceived(self, receivedData, dataToSend):
         responseData = ""

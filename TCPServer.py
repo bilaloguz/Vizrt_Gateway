@@ -7,9 +7,6 @@ class TCPServer:
     def __init__(self, port, onDataReceive):
         self.port = port
         self.onDataReceive = onDataReceive
-        self.tcpServer = None
-    
-    def run(self):
         TCP_IP = '0.0.0.0' 
         TCP_PORT = self.port 
         BUFFER_SIZE = 20  # Usually 1024, but we need quick response 
@@ -17,6 +14,9 @@ class TCPServer:
         self.tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
         self.tcpServer.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) 
         self.tcpServer.bind((TCP_IP, TCP_PORT)) 
+    
+    def run(self):
+        
         threads = [] 
  
         while True: 
@@ -28,10 +28,7 @@ class TCPServer:
     
     def stop(self):     
         print("TCPServer.stop")
-        try:
-            self.tcpServer.shutdown()
-        except Exception as e:
-            print(str(e))
+
         try:
             self.tcpServer.close()
         except Exception as e:
