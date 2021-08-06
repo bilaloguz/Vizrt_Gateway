@@ -1,0 +1,117 @@
+
+2021-08-03 15:58:56,520::192.168.147.183 - - [03/Aug/2021 15:58:56] "GET / HTTP/1.1" 200 -
+2021-08-03 17:07:04,510:: * Detected change in 'C:\\Users\\TEMP\\Desktop\\Vizrt_Gateway-master\\Vizrt_Gateway-master\\webapp\\webserver.py', reloading
+2021-08-06 14:06:21,788::192.168.147.183 - - [06/Aug/2021 14:06:21] "GET / HTTP/1.1" 200 -
+2021-08-06 14:06:23,579::192.168.147.183 - - [06/Aug/2021 14:06:23] "GET / HTTP/1.1" 200 -
+2021-08-06 14:24:55,588::192.168.147.183 - - [06/Aug/2021 14:24:55] "GET / HTTP/1.1" 200 -
+2021-08-06 14:25:53,858::192.168.147.183 - - [06/Aug/2021 14:25:53] "GET / HTTP/1.1" 200 -
+2021-08-06 14:25:54,202::192.168.147.183 - - [06/Aug/2021 14:25:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-08-06 16:13:06,875::192.168.147.183 - - [06/Aug/2021 16:13:06] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:13:06,886::192.168.147.183 - - [06/Aug/2021 16:13:06] "GET / HTTP/1.1" 200 -
+2021-08-06 16:13:58,252::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 31, in setConfig
+    self.TCPServer.stop()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 30, in stop
+    self.tcpServer.shutdown()
+AttributeError: 'TCPServer' object has no attribute 'tcpServer'
+2021-08-06 16:13:58,262::192.168.147.183 - - [06/Aug/2021 16:13:58] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 16:14:44,354::192.168.147.183 - - [06/Aug/2021 16:14:44] "GET / HTTP/1.1" 200 -
+2021-08-06 16:14:44,397::192.168.147.183 - - [06/Aug/2021 16:14:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-08-06 16:14:46,463::192.168.147.183 - - [06/Aug/2021 16:14:46] "GET / HTTP/1.1" 200 -
+2021-08-06 16:14:52,919::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 31, in setConfig
+    self.TCPServer.stop()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 30, in stop
+    self.tcpServer.shutdown()
+AttributeError: 'TCPServer' object has no attribute 'tcpServer'
+2021-08-06 16:14:52,922::192.168.147.183 - - [06/Aug/2021 16:14:52] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 16:15:09,250::192.168.147.183 - - [06/Aug/2021 16:15:09] "GET / HTTP/1.1" 200 -
+2021-08-06 16:15:09,625::192.168.147.183 - - [06/Aug/2021 16:15:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-08-06 16:15:13,369::192.168.147.183 - - [06/Aug/2021 16:15:13] "GET / HTTP/1.1" 200 -
+2021-08-06 16:15:13,580::192.168.147.183 - - [06/Aug/2021 16:15:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-08-06 16:23:49,904::192.168.147.183 - - [06/Aug/2021 16:23:49] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:23:49,916::192.168.147.183 - - [06/Aug/2021 16:23:49] "GET / HTTP/1.1" 200 -
+2021-08-06 16:24:46,178::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 31, in setConfig
+    self.TCPServer.stop()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 30, in stop
+    self.tcpServer.shutdown()
+AttributeError: 'TCPServer' object has no attribute 'tcpServer'
+2021-08-06 16:24:46,184::192.168.147.183 - - [06/Aug/2021 16:24:46] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 16:25:37,510::192.168.147.183 - - [06/Aug/2021 16:25:37] "GET / HTTP/1.1" 200 -
+2021-08-06 16:25:37,563::192.168.147.183 - - [06/Aug/2021 16:25:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-08-06 16:25:58,666::192.168.147.183 - - [06/Aug/2021 16:25:58] "GET / HTTP/1.1" 200 -
+2021-08-06 16:26:02,306::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 31, in setConfig
+    self.TCPServer.stop()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 30, in stop
+    self.tcpServer.shutdown()
+AttributeError: 'TCPServer' object has no attribute 'tcpServer'
+2021-08-06 16:26:02,315::192.168.147.183 - - [06/Aug/2021 16:26:02] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 16:26:12,163::Exception on /save [POST]
+Traceback (most recent call last):
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TEMP\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\webserver.py", line 96, in saveConfig
+    gw.setConfig(getConfig())
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\gateway.py", line 31, in setConfig
+    self.TCPServer.stop()
+  File "c:\Users\TEMP\Desktop\Vizrt_Gateway-master\Vizrt_Gateway-master\webapp\TCPServer.py", line 30, in stop
+    self.tcpServer.shutdown()
+AttributeError: 'TCPServer' object has no attribute 'tcpServer'
+2021-08-06 16:26:12,167::192.168.147.183 - - [06/Aug/2021 16:26:12] "[35m[1mPOST /save HTTP/1.1[0m" 500 -
+2021-08-06 16:30:30,584::192.168.147.183 - - [06/Aug/2021 16:30:30] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:30:30,649::192.168.147.183 - - [06/Aug/2021 16:30:30] "GET / HTTP/1.1" 200 -
+2021-08-06 16:36:37,157::192.168.147.183 - - [06/Aug/2021 16:36:37] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:37:55,224::192.168.147.183 - - [06/Aug/2021 16:37:55] "[32mPOST /save HTTP/1.1[0m" 302 -
+2021-08-06 16:37:55,232::192.168.147.183 - - [06/Aug/2021 16:37:55] "GET / HTTP/1.1" 200 -

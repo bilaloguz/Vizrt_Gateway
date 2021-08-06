@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Libero</title>
+    <style>
+        body {
+            background: #36d1dc;
+            background: -webkit-linear-gradient(to right, #5b86e5, #36d1dc);
+            background: linear-gradient(to right, #5b86e5, #36d1dc);
+        }
+        
+        h1 {
+            color: rgb(43, 43, 43);
+        }
+        
+        p {
+            color: rgb(43, 43, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="
+        max-width: max-content;
+        margin-top: 5%;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: rgba(245, 245, 245, 0.507);
+        -webkit-box-shadow: 4px 4px 16px 1px rgba(0, 0, 0, 0.27);
+        box-shadow: 4px 4px 16px 1px rgba(0, 0, 0, 0.27);
+      ">
+        {% block content %}
+        <h1 class="text-center">Graphic Gateway Configuration</h1>
+        <form class="form-group" action="/save" method="post" novalidate>
+            {{ form.hidden_tag() }}
+
+            <p>
+                {{ form.webPort.label(class="form-label") }}<br /> {{ form.webPort(size=32 ,class="form-control") }}
+            </p>
+
+            <p>
+                {{ form.listenerPort.label(class="form-label") }}<br /> {{ form.listenerPort(size=32 ,class="form-control") }}
+            </p>
+            <p>
+                {{ form.serverType.label(class="form-label") }}<br /> {{ form.serverType(size=32 ,class="form-control") }}
+            </p>
+            <p>
+                {{ form.serverIP.label(class="form-label") }}<br /> {{ form.serverIP(size=32 ,class="form-control") }}
+            </p>
+            <p>
+                {{ form.emptyScenePath.label(class="form-label") }}<br /> {{ form.emptyScenePath(size=32 ,class="form-control") }}
+            </p>
+            <p>
+                {{ form.channelportScenesDirectoryPath.label(class="form-label") }}<br /> {{ form.channelportScenesDirectoryPath(size=32 ,class="form-control") }}
+            </p>
+
+            <div class="mb-3">
+                {{ form.submit(class="btn-sm btn-primary form-control") }}
+            </div>
+        </form>
+        {% endblock %}
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
