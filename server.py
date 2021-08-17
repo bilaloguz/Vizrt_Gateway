@@ -12,7 +12,7 @@ def getConfig():
     configFile = configparser.ConfigParser()
     configFile.read("Gateway.config")
     config = {}
-    config['WebPort'] = int(config['Configuration']['WebPort'])
+    config['WebPort'] = int(configFile['Configuration']['WebPort'])
     config['ListenerPort'] = int(configFile['Configuration']['ListenerPort'])
     config['ServerIP'] = str(configFile['Configuration']['ServerIP'])
     config['ServerPort'] = int(configFile['Configuration']['ServerPort'])
@@ -23,7 +23,8 @@ def getConfig():
 
 def runGateway():
     config = getConfig()
-    gw = Gateway(config)
+    gw = Gateway()
+    gw.setConfig(config)
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()
